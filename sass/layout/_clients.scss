@@ -1,5 +1,5 @@
 .clients {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -10,12 +10,11 @@
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
-        // margin-top: 0;
     }
 }
 .clients-title {
     color: var(--main-color);
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         margin-bottom: 30px;
     }
     @media screen and (min-width: 768px) {
@@ -26,20 +25,25 @@
     }
 }
 .clients-list {
+    display: flex;
     margin-left: -30px;
+    @media screen and (min-width: 320px) {
+        max-width: 479px;
+
+        flex-wrap: wrap;
+    }
     @media screen and (min-width: 480px) {
         max-width: 480px;
-        display: flex;
+
         flex-wrap: wrap;
     }
     @media screen and (min-width: 768px) {
         max-width: 768px;
-        display: flex;
+
         flex-wrap: wrap;
     }
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
-        display: flex;
     }
 }
 .clients-item {
@@ -54,7 +58,7 @@
     }
     margin-bottom: 30px;
     margin-left: 30px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
         width: calc(100% / 2 - 30px);
     }
     @media screen and (min-width: 768px) {
@@ -65,8 +69,6 @@
     }
 }
 .clients-link {
-    // width: calc(100% / 6- 30px);
-
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -87,7 +89,3 @@
 .clients-icon {
     fill: currentColor;
 }
-
-// .clients-item:not(:last-child) {
-//     margin-right: 30px;
-// }
