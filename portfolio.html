@@ -23,10 +23,16 @@
     <body>
         <header class="header">
             <div class="container nav">
+                <a class="logo link" href="./index.html"
+                    >Web<span class="logo__part link">Studio</span></a
+                >
+                <button type="button" class="menu-open-btn">
+                    <svg class="header__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_40px-1"></use>
+                    </svg>
+                </button>
+
                 <nav class="navigation">
-                    <a class="logo link" href="./index.html"
-                        >Web<span class="logo__part link">Studio</span></a
-                    >
                     <ul class="menu navigation__menu__list list">
                         <li class="menu__item menu__item-list item">
                             <a class="menu__link link" href="./index.html"
@@ -78,6 +84,67 @@
                         >
                     </li>
                 </ul>
+            </div>
+
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu-top">
+                        <button type="button" class="menu-close-btn">
+                            <svg class="mob-menu__icon" width="40" height="40">
+                                <use
+                                    href="./images/icons.svg#icon-close_40px-1"
+                                ></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu__list list">
+                            <li class="mob-menu__item item">
+                                <a
+                                    class="mob-menu__link link current"
+                                    href="./index.html"
+                                    >Студия</a
+                                >
+                            </li>
+                            <li class="mob-menu__item item">
+                                <a
+                                    class="mob-menu__link link"
+                                    href="./portfolio.html"
+                                    >Портфолио</a
+                                >
+                            </li>
+                            <li class="mob-menu__item item">
+                                <a class="mob-menu__link link" href="#"
+                                    >Контакты</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-contacts list">
+                            <li class="mob-contacts__item item">
+                                <a
+                                    class="mob-contacts__link link"
+                                    href="tel:+380961111111"
+                                >
+                                    +38 096 111 11 11</a
+                                >
+                            </li>
+                            <li class="mob-contacts__item-email item">
+                                <a
+                                    class="mob-contacts__link-email link"
+                                    href="mailto:info@devstudio.com"
+                                >
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mob-soc-list list">
+                            <li class="mob-soc-icon">Instagram</li>
+                            <li class="mob-soc-icon">Twitter</li>
+                            <li class="mob-soc-icon">Facebook</li>
+                            <li class="mob-soc-icon-last">LinkedIn</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
@@ -674,5 +741,6 @@
                 </div>
             </footer>
         </main>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
