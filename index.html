@@ -24,18 +24,14 @@
         <header class="header">
             <div class="container nav">
                 <a class="logo link" href="./index.html"
-                        >Web<span class="logo__part link">Studio</span></a
-                    >
-                    <button type="button" class="menu-open-btn"><svg
-                                    class="header__icon"
-                                    width="40"
-                                    height="40"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-menu_40px-1"
-                                    ></use>
-                                </svg></button>
-                                
+                    >Web<span class="logo__part link">Studio</span></a
+                >
+                <button type="button" class="menu-open-btn">
+                    <svg class="header__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu_40px-1"></use>
+                    </svg>
+                </button>
+
                 <nav class="navigation">
                     <ul class="menu navigation__menu__list list">
                         <li class="menu__item menu__item-list item">
@@ -91,47 +87,51 @@
             </div>
 
             <div class="mob-menu is-hidden">
-                <div class="container ">
+                <div class="container">
                     <div class="mob-menu-top">
-                        
-                            <button type="button" class="menu-close-btn"><svg
-                                    class="mob-menu__icon"
-                                    width="40"
-                                    height="40"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-close_40px-1"
-                                    ></use>
-                                </svg></button>
-                        <ul class="mob-menu__list  list">
+                        <button type="button" class="menu-close-btn">
+                            <svg class="mob-menu__icon" width="40" height="40">
+                                <use
+                                    href="./images/icons.svg#icon-close_40px-1"
+                                ></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu__list list">
                             <li class="mob-menu__item item">
                                 <a
-                                class="mob-menu__link link current"
-                                href="./index.html"
-                                >Студия</a
+                                    class="mob-menu__link link current"
+                                    href="./index.html"
+                                    >Студия</a
                                 >
                             </li>
                             <li class="mob-menu__item item">
-                                <a class="mob-menu__link link" href="./portfolio.html"
-                                >Портфолио</a
+                                <a
+                                    class="mob-menu__link link"
+                                    href="./portfolio.html"
+                                    >Портфолио</a
                                 >
                             </li>
                             <li class="mob-menu__item item">
-                                <a class="mob-menu__link link" href="#">Контакты</a>
+                                <a class="mob-menu__link link" href="#"
+                                    >Контакты</a
+                                >
                             </li>
                         </ul>
                     </div>
                     <div class="mob-menu-bottom">
                         <ul class="mob-contacts list">
                             <li class="mob-contacts__item item">
-                                <a class="mob-contacts__link link" href="tel:+380961111111">
+                                <a
+                                    class="mob-contacts__link link"
+                                    href="tel:+380961111111"
+                                >
                                     +38 096 111 11 11</a
                                 >
                             </li>
                             <li class="mob-contacts__item-email item">
                                 <a
-                            class="mob-contacts__link-email link"
-                            href="mailto:info@devstudio.com"
+                                    class="mob-contacts__link-email link"
+                                    href="mailto:info@devstudio.com"
                                 >
                                     info@devstudio.com
                                 </a>
@@ -149,17 +149,17 @@
         </header>
         <main>
             <div class="hero-center">
-            <section class="hero">
-                <div class="container container__hero">
-                    <h1 class="hero__title hero__title-top">
-                        ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
-                    </h1>
-                    <button data-modal-open type="button" class="hero__btn">
-                        Заказать услугу
-                    </button>
-                </div>
-                </div>
-            </section>
+                <section class="hero">
+                    <div class="container container__hero">
+                        <h1 class="hero__title hero__title-top">
+                            ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
+                        </h1>
+                        <button data-modal-open type="button" class="hero__btn">
+                            Заказать услугу
+                        </button>
+                    </div>
+                </section>
+            </div>
             <section class="about">
                 <div class="container">
                     <h2 class="about__hidden-title about__title">
@@ -315,22 +315,34 @@
                     <ul class="team__list list">
                         <li class="team__item">
                             <picture>
-                                <source srcset="./images/team-desktop/team-desktop-1-1x.jpg 1x,
-                            ./images/team-desktop/team-desktop-1-2x.jpg 2x "
-                            media="(min-width:1200px)">
-                                <source srcset="./images/team-tablet/team-tablet-1-1x.jpg 1x,
-                            ./images/team-tablet/team-tablet-1-2x.jpg 2x "
-                            media="(min-width:768px)">
-                                <source srcset="./images/team-mob/team-img-1-1x.jpg 1x,
-                            ./images/team-mob/team-img-1-2x.jpg 2x "
-                            media="(min-width:320px)">
-                            <img
-                                src="./images/team-mob/team-img-1-2x.jpg"
-                                alt="Участник команды"
-                                class="team__img"
-                            />
+                                <source
+                                    srcset="
+                                        ./images/team-desktop/team-desktop-1-1x.jpg 1x,
+                                        ./images/team-desktop/team-desktop-1-2x.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-tablet/team-tablet-1-1x.jpg 1x,
+                                        ./images/team-tablet/team-tablet-1-2x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-mob/team-img-1-1x.jpg 1x,
+                                        ./images/team-mob/team-img-1-2x.jpg 2x
+                                    "
+                                    media="(min-width:320px)"
+                                />
+                                <img
+                                    src="./images/team-mob/team-img-1-2x.jpg"
+                                    alt="Участник команды"
+                                    class="team__img"
+                                />
                             </picture>
-                            
+
                             <div class="team__card">
                                 <h3 class="team__title">Игорь Демьяненко</h3>
                                 <p class="team__text" lang="en">
@@ -406,19 +418,31 @@
                         </li>
                         <li class="team__item">
                             <picture>
-                                <source srcset="./images/team-desktop/team-desktop-2-1x.jpg 1x,
-                            ./images/team-desktop/team-desktop-2-2x.jpg 2x "
-                            media="(min-width:1200px)">
-                                <source srcset="./images/team-tablet/team-tablet-2-1x.jpg 1x,
-                            ./images/team-tablet/team-tablet-2-2x.jpg 2x "
-                            media="(min-width:768px)">
-                                <source srcset="./images/team-mob/team-img-2-1x.jpg 1x,
-                            ./images/team-mob/team-img-2-2x.jpg 2x "
-                            media="(min-width:320px)">
-                            <img
-                                src="./images/team-mob/team-img-2-2x.jpg"
-                                alt="Участник команды"
-                            />
+                                <source
+                                    srcset="
+                                        ./images/team-desktop/team-desktop-2-1x.jpg 1x,
+                                        ./images/team-desktop/team-desktop-2-2x.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-tablet/team-tablet-2-1x.jpg 1x,
+                                        ./images/team-tablet/team-tablet-2-2x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-mob/team-img-2-1x.jpg 1x,
+                                        ./images/team-mob/team-img-2-2x.jpg 2x
+                                    "
+                                    media="(min-width:320px)"
+                                />
+                                <img
+                                    src="./images/team-mob/team-img-2-2x.jpg"
+                                    alt="Участник команды"
+                                />
                             </picture>
                             <div class="team__card">
                                 <h3 class="team__title">Ольга Репина</h3>
@@ -495,19 +519,31 @@
                         </li>
                         <li class="team__item">
                             <picture>
-                                <source srcset="./images/team-desktop/team-desktop-3-1x.jpg 1x,
-                            ./images/team-desktop/team-desktop-3-2x.jpg 2x "
-                            media="(min-width:1200px)">
-                                <source srcset="./images/team-tablet/team-tablet-3-1x.jpg 1x,
-                            ./images/team-tablet/team-tablet-3-2x.jpg 2x "
-                            media="(min-width:768px)">
-                                <source srcset="./images/team-mob/team-img-3-1x.jpg 1x,
-                            ./images/team-mob/team-img-3-2x.jpg 2x "
-                            media="(min-width:320px)">
-                            <img
-                                src="./images/team-mob/team-img-3-2x.jpg"
-                                alt="Участник команды"
-                            />
+                                <source
+                                    srcset="
+                                        ./images/team-desktop/team-desktop-3-1x.jpg 1x,
+                                        ./images/team-desktop/team-desktop-3-2x.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-tablet/team-tablet-3-1x.jpg 1x,
+                                        ./images/team-tablet/team-tablet-3-2x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-mob/team-img-3-1x.jpg 1x,
+                                        ./images/team-mob/team-img-3-2x.jpg 2x
+                                    "
+                                    media="(min-width:320px)"
+                                />
+                                <img
+                                    src="./images/team-mob/team-img-3-2x.jpg"
+                                    alt="Участник команды"
+                                />
                             </picture>
                             <div class="team__card">
                                 <h3 class="team__title">Николай Тарасов</h3>
@@ -582,19 +618,31 @@
                         </li>
                         <li class="team__item">
                             <picture>
-                                <source srcset="./images/team-desktop/team-desktop-4-1x.jpg 1x,
-                            ./images/team-desktop/team-desktop-4-2x.jpg 2x "
-                            media="(min-width:1200px)">
-                                <source srcset="./images/team-tablet/team-tablet-4-1x.jpg 1x,
-                            ./images/team-tablet/team-tablet-4-2x.jpg 2x "
-                            media="(min-width:768px)">
-                                <source srcset="./images/team-mob/team-img-4-1x.jpg 1x,
-                            ./images/team-mob/team-img-4-2x.jpg 2x "
-                            media="(min-width:320px)">
-                            <img
-                                src="./images/team-mob/team-img-4-2x.jpg"
-                                alt="Участник команды"
-                            />
+                                <source
+                                    srcset="
+                                        ./images/team-desktop/team-desktop-4-1x.jpg 1x,
+                                        ./images/team-desktop/team-desktop-4-2x.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-tablet/team-tablet-4-1x.jpg 1x,
+                                        ./images/team-tablet/team-tablet-4-2x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/team-mob/team-img-4-1x.jpg 1x,
+                                        ./images/team-mob/team-img-4-2x.jpg 2x
+                                    "
+                                    media="(min-width:320px)"
+                                />
+                                <img
+                                    src="./images/team-mob/team-img-4-2x.jpg"
+                                    alt="Участник команды"
+                                />
                             </picture>
                             <div class="team__card">
                                 <h3 class="team__title">Михаил Ермаков</h3>
